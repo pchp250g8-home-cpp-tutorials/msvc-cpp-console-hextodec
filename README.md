@@ -2,7 +2,7 @@ HexToDec. C++ Tutorials. Microsoft Visual Studio IDE. Simple Input/Output. Algor
 A console application in the C++ programming language.
 The program does the following:
   1. Asks the user to enter a string.
-  2. Checks whether the entered string is valid. It must be less than 12 characters long and contain only the numbers between 0 and 7.
+  2. Checks whether the entered string is valid. It must be less than 9 characters long and contain only the numbers between 0 and 7.
   3. If the string does not meet the above conditions, it displays the message "incorrect octal number format" and exits.
   4. If the line meets the above conditions,
   A variable is introduced for the value of the decimal number and the multiplier to the power of 8 with initial values ​​of 0 and 1, respectively.
@@ -24,7 +24,7 @@ HexToDec. Занятия по C++. ИС Visual Studio. Простой Ввод/�
 Консольное приложение написанное на языке программирования C++. 
 Программа делает следующее:
   1. Просит пользователя ввести строку.
-  2. Проверяет правильная ли строка была введена. Она должна быть короче 12 символов и содержать только цифры от 0 до 7.
+  2. Проверяет правильная ли строка была введена. Она должна быть короче 9 символов и содержать только цифры от 0 до 7.
   3. Если строка не соответсвует выше перечисленным условиям выводит сообщение "неправильный формат восьмеричного числа" и завершает работу.
   4. Если строка соответствует выше перечисленным условиям,
      вводится переменная для значения десятичного числа и множителя степени 8 с начальными значениями 0 и 1 соответсвенно.
