@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="HexToDec/HexToDec.vcxproj" Id="2d77a665-9023-4c86-b0a3-91f878d815b1" />
+</Solution>
