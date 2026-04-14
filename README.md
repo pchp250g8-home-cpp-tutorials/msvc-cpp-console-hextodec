@@ -2,22 +2,30 @@ HexToDec. C++ Tutorials. Microsoft Visual Studio IDE. Simple Input/Output. Algor
 A console application in the C++ programming language.
 The program does the following:
   1. Asks the user to enter a string.
-  2. Checks whether the entered string is valid. It must be less than 9 characters long and contain only the numbers between 0 and 7.
-  3. If the string does not meet the above conditions, it displays the message "incorrect octal number format" and exits.
+  2. Checks whether the entered string is valid.
+     It must be less than 9 characters long and contain only the numbers between 0 and 9 and the letters between A(a) and F(f).
+  3. If the string does not meet the above conditions, it displays the message "incorrect hexadecimal number format" and exits.
   4. If the line meets the above conditions,
-  A variable is introduced for the value of the decimal number and the multiplier to the power of 8 with initial values ​​of 0 and 1, respectively.
+     A variable is introduced for the value of the decimal number and the multiplier to the power of 16 with initial values ​​of 0 and 1, respectively.
   5. The loop with the parameter is executed.
-    5.1. The initial value of the parameter is set to 0, and the final value is set to the number of characters in the string (its length).
-    5.2. A series of cycles is performed.
-      5.2.1. The code of the next character in the string is determined. It is converted to the number between 0 and 7.
-             The formula used is: character code - character code "0" (or the number 48 is subtracted from the character code).
-             Moreover, the calculation starts from the end of the line.
-      5.2.2. The resulting value is multiplied by a power of eight.
-      5.2.3. The value obtained in the previous step is added to the decimal number variable.
-      5.2.4. The variable of the factor of power 8 is multiplied by 8, since the number is octal.
+     5.1. The initial value of the parameter is set to 0, and the final value is set to the number of characters in the string (its length).
+     5.2. A series of cycles is performed.
+          5.2.1. The code of the next character in the string is determined. It is converted to the number between 0 and 15.
+                The first case. The character is digit between 0 and 9.
+                The formula used is: character code - character code "0" (or the number 48 is subtracted from the character code).
+                The second case. The character is letter between A and F.
+                The formula used is: character code - character code "A" + 10 
+                (or the number 65 is subtracted from the character code then the number 10 is added).
+                The third case. The character is letter between a and f.
+                The formula used is: character code - character code "a" + 10 
+                (or the number 97 is subtracted from the character code then the number 10 is added). 
+                Moreover, the calculation starts from the end of the line.
+          5.2.2. The resulting value is multiplied by a power of sixteen.
+          5.2.3. The value obtained in the previous step is added to the decimal number variable.
+          5.2.4. The variable of the factor of power 16 is multiplied by 16, since the number is octal.
     5.3. The value of the loop parameter is compared with the final value. If it is less, the loop continues. Otherwise, it terminates.
     5.4. The loop parameter variable is incremented by the loop increment. In this example, it is 1.
-  6. The entered octal number and its representation in the decimal system are displayed on the screen. 
+  6. The entered hexadecimal number and its representation in the decimal system are displayed on the screen. 
 Developed in the Microsoft Visual Studio integrated environment.
 
 HexToDec. Занятия по C++. ИС Visual Studio. Простой Ввод/Вывод. Алгоритмы. Строки. Платформа Windows. Консольное приложение.
